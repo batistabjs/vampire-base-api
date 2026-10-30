@@ -4,7 +4,7 @@ Bem-vindo à **VampireBase API**! Um sistema RESTful sinistro para cadastro, ger
 
 ---
 
-## 🛠 Tecnologias Utilizadas no Submundo
+## Tecnologias Utilizadas no Submundo
 
 - **Node.js** - Magia negra em forma de JavaScript
 - **JSON** - Pergaminhos digitais para armazenamento de dados
