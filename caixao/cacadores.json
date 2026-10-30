@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Conde Drácula",
+    "email": "dracula@vampbase.com",
+    "senha": "2a3481a055bb56bcd7d8ec217832d8b331d8b600ae91d2687958f6dbfa719893",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "nome": "Blade",
+    "email": "blade@vampbase.com",
+    "senha": "6870a096b16ef8f1972fd25356cedc29ad30f1f7dc70e536c5f3948edfc8acc3",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "nome": "Bella Swan",
+    "email": "bella@vampbase.com",
+    "senha": "7ba6a99e06c324618f782bf017ab366bf3b7e8e967943558491f552dfc6723f3",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "vampire-base-api",
+  "version": "1.0.0",
+  "description": "API RESTful para cadastro e gerenciamento de Vampiros",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["vampire", "api", "rest"],
+  "author": "Vampire Base Team",
+  "license": "MIT"
+}

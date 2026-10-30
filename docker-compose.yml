@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    image: vampire-base-api:local
+    container_name: vampire-base-api
+    ports:
+      - "9193:8080"
+    volumes:
+      - ./caixao:/app/caixao
+    restart: unless-stopped
