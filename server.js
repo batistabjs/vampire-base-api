@@ -457,7 +457,8 @@ async function handleRequest(req, res) {
 
     const result = handlers[route.handler](req, route.params, body);
 
-    if (result.status) {
+    // status numérico = HTTP status code; status string = campo de domínio (ex: 'Acordado')
+    if (typeof result.status === 'number') {
       return sendJson(res, result.status, result);
     }
 
