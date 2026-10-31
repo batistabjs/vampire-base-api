@@ -181,7 +181,6 @@ const handlers = {
   index(req) {
     const query = parseQuery(req.url.split('?')[1]);
     const pagina = Number(query.pagina) || 1;
-    const tamanhoPagina = Number(query.tamanho_pagina) || 10;
     const ordenarPor = query.ordenar_por || 'id';
     const direcaoOrdenacao = (query.direcao_ordenacao || 'asc').toLowerCase();
     const busca = query.busca || null;
@@ -218,6 +217,8 @@ const handlers = {
     });
 
     const totalRegistros = vampiros.length;
+    // Sem tamanho_pagina explícito, retorna todos os cadastros do caixão
+    const tamanhoPagina = query.tamanho_pagina ? Number(query.tamanho_pagina) : Math.max(totalRegistros, 1);
     const totalPaginas = Math.ceil(totalRegistros / tamanhoPagina);
     const inicio = (pagina - 1) * tamanhoPagina;
     const dadosPagina = vampiros.slice(inicio, inicio + tamanhoPagina);
